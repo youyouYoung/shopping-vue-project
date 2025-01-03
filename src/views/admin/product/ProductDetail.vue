@@ -21,7 +21,7 @@
       async fetchProduct() {
         try {
           const id = this.$route.params.id;
-          const response = await axios.get(`${BASE_URL}/api/products/${id}`);
+          const response = await axios.get(`${BASE_URL}/api/products/${id}/`);
           this.product = response.data;
         } catch (error) {
           console.error("Error fetching product details:", error);

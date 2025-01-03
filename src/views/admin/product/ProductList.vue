@@ -44,7 +44,7 @@
         }
       },
       viewProduct(id) {
-        this.$router.push(`/admin/products/${id}`);
+        this.$router.push(`/admin/products/${id}/`);
       },
     },
     mounted() {

@@ -11,7 +11,7 @@ export default [
         { path: 'manage', name: 'Manage', component: () => import('@/views/admin/Manage.vue') },
         { path: "products", component: ProductList },
         { path: "products/add", component: AddProduct },
-        { path: "products/:id", component: ProductDetail },
+        { path: "products/:id/", component: ProductDetail },
       ]
     }
   ];
