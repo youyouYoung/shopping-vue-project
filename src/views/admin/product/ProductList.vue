@@ -35,7 +35,7 @@
         if (!confirm("Are you sure you want to delete this product?")) return;
   
         try {
-          await axios.delete(`${BASE_URL}/api/products/${id}`);
+          await axios.delete(`${BASE_URL}/api/products/${id}/`);
           alert("Product deleted successfully!");
           this.fetchProducts();
         } catch (error) {

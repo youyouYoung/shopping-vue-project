@@ -2,8 +2,8 @@
     <div>
       <h1>Admin Dashboard</h1>
       <!-- 在这里添加你的组件 HTML 内容 -->
-      <router-link to="products">Products</router-link>
-      <router-link to="products/add">Add Product</router-link>
+      <router-link to="admin/products">Products</router-link><p></p>
+      <router-link to="admin/products/add">Add Product</router-link>
     </div>
   </template>
   
