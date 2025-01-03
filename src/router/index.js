@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '@/views/HomeView.vue';
+import AboutView from '../views/AboutView.vue';
 import ClientRoutes from './client';
 import AdminRoutes from './admin';
 
@@ -26,6 +28,20 @@ import AdminRoutes from './admin';
 // Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: '/home',
+    name: 'home',
+    component: HomeView
+  },
+  {
+    path: '/about',
+    name: 'about',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+  },
+
   ...ClientRoutes,  // 客户端路由
   ...AdminRoutes    // 运营端路由
 ];

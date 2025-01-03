@@ -5,7 +5,7 @@ import ProductDetail from "@/views/admin/product/ProductDetail.vue";
 export default [
     {
       path: '/admin',
-      // component: () => import('@/layouts/AdminLayout.vue'),
+      component: () => import('@/layouts/AdminLayout.vue'),
       children: [
         { path: '', name: 'Dashboard', component: () => import('@/views/admin/Dashboard.vue') },
         { path: 'manage', name: 'Manage', component: () => import('@/views/admin/Manage.vue') },
